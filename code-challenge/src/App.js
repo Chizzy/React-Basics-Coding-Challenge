@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import C1 from './C1';
-import C2 from './C2';
+import C1 from './components/C1';
 
 class App extends Component {
   render () {
@@ -10,7 +8,6 @@ class App extends Component {
       <div>
         <h1>React Basics Coding Challenge</h1>
         <C1 />
-        <C2 />
       </div>
     )
   }
