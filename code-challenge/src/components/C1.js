@@ -10,6 +10,9 @@ class C1 extends Component {
         event.preventDefault()
         this.setState({C2 : this.state.C1})
     }
+    getFromC2 = (modifiedC2) => {
+        this.setState({C1 : modifiedC2})
+    }
 
     render() {
         return (
@@ -19,7 +22,7 @@ class C1 extends Component {
                     <button onClick={this.handleClick}>Send to C2</button>
                     <button type="submit">Access Address</button>
                 </form>
-                <C2 C2={this.state.C2} />
+                <C2 C2={this.state.C2} modifiedC2={this.getFromC2}  />
             </div>
         );
     }
