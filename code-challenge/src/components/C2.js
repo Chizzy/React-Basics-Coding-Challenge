@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 class C2 extends Component {
     state = {
-        C1: '',
         C2: ''
     }
     handleChange = (event) => {
@@ -22,6 +21,10 @@ class C2 extends Component {
                     <input type="text" name="C2" defaultValue={this.props.C2} onChange={this.handleChange} /><br />
                     <button onClick={this.handleClick}>Send to C1</button>
                 </form>
+                <div>
+                    <h2>{this.props.fact}</h2>
+                    <h3>{this.props.length}</h3>
+                </div>
             </div>
         );
     }
