@@ -57,7 +57,7 @@ class C2 extends Component {
                 </Form>
                 <Fact>
                     <h2>{this.props.fact}</h2>
-                    <h3>{(this.props.length) == 0 ? '' : this.props.length}</h3>
+                    <h3>{(this.props.length) === 0 ? '' : this.props.length}</h3>
                 </Fact>
             </div>
         );
